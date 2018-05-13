@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
+
+:root {
+  --black: #000;
+  --grey: #999999;
+  --width: 200px;
+  --height: 100px;
+  --border: 2px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  background: burlywood;
+}
+
+.container {
+  display: grid;
+  min-height: 500px;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  grid-gap: 30px;
+}
+
+.text {
+  font-family: "Cutive Mono", monospace;
+  font-size: 20px;
+  min-width: 300px;
+}
+
+/* mouse body */
+.icon.mouse {
+  position: relative;
+  border: var(--border) solid var(--black);
+  height: var(--height);
+  width: var(--width);
+  border-radius: calc(var(--height) * 0.9) var(--height) 0 0;
+  background: var(--grey);
+}
+
+/* eye */
+.icon.mouse:before {
+  content: "";
+  height: calc(var(--height) * 0.05);
+  width: calc(var(--height) * 0.05);
+  border-radius: calc(var(--height) * 0.15);
+  background: var(--black);
+  position: absolute;
+  top: 63%;
+  left: 82%;
+  box-shadow: calc(var(--height) * -0.02) 0 0 calc(var(--height) * 0.05) white;
+}
+
+/* tail */
+.icon.mouse:after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  width: calc(var(--height) / 2);
+  height: calc(var(--height) / 2);
+  border-left: var(--border) solid transparent;
+  border-right: var(--border) solid var(--black);
+  border-top: var(--border) solid transparent;
+  border-bottom: var(--border) solid var(--black);
+  border-radius: 12px 38px 78px 47px;
+  transform: rotate(112deg);
+  z-index: -1;
+}
+
+/* ear */
+.icon.mouse i {
+  position: absolute;
+  height: calc(var(--height) / 2);
+  width: calc(var(--height) / 2);
+  border-radius: calc(var(--height) / 4);
+  background: var(--grey);
+  border: var(--border) solid var(--black);
+  z-index: -1;
+  left: 68%;
+  top: 5%;
+}
