@@ -1,0 +1,117 @@
+:root {
+  --key-width: 9px;
+  --key-color: white;
+}
+
+.icon.piano {
+  position: relative;
+  background: var(--key-color);
+  height: 40px;
+  left: calc(-28 * var(--key-width));
+  width: var(--key-width);
+  box-shadow: calc(var(--key-width) * 1 + 1px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 2 + 2px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 3 + 3px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 4 + 4px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 5 + 5px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 6 + 6px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 7 + 7px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 8 + 8px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 9 + 9px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 10 + 10px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 11 + 11px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 12 + 12px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 13 + 13px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 14 + 14px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 15 + 15px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 16 + 16px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 17 + 17px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 18 + 18px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 19 + 19px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 20 + 20px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 21 + 21px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 22 + 22px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 23 + 23px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 24 + 24px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 25 + 25px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 26 + 26px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 27 + 27px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 28 + 28px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 29 + 29px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 30 + 30px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 31 + 31px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 32 + 32px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 33 + 33px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 34 + 34px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 35 + 35px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 36 + 36px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 37 + 37px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 38 + 38px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 39 + 39px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 41 + 41px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 40 + 40px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 42 + 42px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 43 + 43px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 44 + 44px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 45 + 45px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 46 + 46px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 47 + 47px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 48 + 48px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 49 + 49px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 50 + 50px) 0 0 0 var(--key-color),
+    calc(var(--key-width) * 51 + 51px) 0 0 0 var(--key-color);
+}
+
+.icon.piano:after {
+  content: "";
+  height: 30px;
+  width: calc(var(--key-width) / 2 + 1px);
+  background: black;
+  position: absolute;
+  left: calc(var(--key-width) - var(--key-width)/4);
+  box-shadow: calc(var(--key-width) * 2 + 2px) 0 0 0 currentColor,
+    calc(var(--key-width) * 3 + 3px) 0 0 0 currentColor,
+    calc(var(--key-width) * 5 + 5px) 0 0 0 currentColor,
+    calc(var(--key-width) * 6 + 6px) 0 0 0 currentColor,
+    calc(var(--key-width) * 7 + 7px) 0 0 0 currentColor,
+    calc(var(--key-width) * 9 + 9px) 0 0 0 currentColor,
+    calc(var(--key-width) * 10 + 10px) 0 0 0 currentColor,
+    calc(var(--key-width) * 12 + 12px) 0 0 0 currentColor,
+    calc(var(--key-width) * 13 + 13px) 0 0 0 currentColor,
+    calc(var(--key-width) * 14 + 14px) 0 0 0 currentColor,
+    calc(var(--key-width) * 16 + 16px) 0 0 0 currentColor,
+    calc(var(--key-width) * 17 + 17px) 0 0 0 currentColor,
+    calc(var(--key-width) * 19 + 19px) 0 0 0 currentColor,
+    calc(var(--key-width) * 20 + 20px) 0 0 0 currentColor,
+    calc(var(--key-width) * 21 + 21px) 0 0 0 currentColor,
+    calc(var(--key-width) * 23 + 23px) 0 0 0 currentColor,
+    calc(var(--key-width) * 24 + 24px) 0 0 0 currentColor,
+    calc(var(--key-width) * 26 + 26px) 0 0 0 currentColor,
+    calc(var(--key-width) * 27 + 27px) 0 0 0 currentColor,
+    calc(var(--key-width) * 28 + 28px) 0 0 0 currentColor,
+    calc(var(--key-width) * 30 + 30px) 0 0 0 currentColor,
+    calc(var(--key-width) * 31 + 31px) 0 0 0 currentColor,
+    calc(var(--key-width) * 33 + 33px) 0 0 0 currentColor,
+    calc(var(--key-width) * 34 + 34px) 0 0 0 currentColor,
+    calc(var(--key-width) * 35 + 35px) 0 0 0 currentColor,
+    calc(var(--key-width) * 37 + 37px) 0 0 0 currentColor,
+    calc(var(--key-width) * 38 + 38px) 0 0 0 currentColor,
+    calc(var(--key-width) * 41 + 41px) 0 0 0 currentColor,
+    calc(var(--key-width) * 40 + 40px) 0 0 0 currentColor,
+    calc(var(--key-width) * 42 + 42px) 0 0 0 currentColor,
+    calc(var(--key-width) * 44 + 44px) 0 0 0 currentColor,
+    calc(var(--key-width) * 45 + 45px) 0 0 0 currentColor,
+    calc(var(--key-width) * 47 + 47px) 0 0 0 currentColor,
+    calc(var(--key-width) * 48 + 48px) 0 0 0 currentColor,
+    calc(var(--key-width) * 49 + 49px) 0 0 0 currentColor;
+}
+
+.icon.piano:before {
+    position: absolute;
+    content: '';
+    width: calc(var(--key-width) * 59.8);
+    height: var(--key-width);
+    background: rgb(134, 64, 24);
+    top: calc(var(--key-width) * -1);
+    left: calc(var(--key-width) * -1);
+}
